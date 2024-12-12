@@ -1,6 +1,5 @@
 # OOP
-OOP
-💡 Introduction<br>
+OOP 💡 Introduction 
 DrawJustin의 **OOP(Object-Oriented Programming)**입니다.
 여러 도서와, 강의, 경험을 통해 깨달은 OOP 지식을 정리하고자 합니다.
 
