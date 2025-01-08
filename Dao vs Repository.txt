@@ -1,0 +1,28 @@
+DAO와 Repository의 차이점
+
+
+
+
+DAO는 Data Access Object이다.
+
+DB와의 연결에 있어 저 레벨 수준의 연결이 사용된다.
+-> 실제 테이블의 컬럼의 속성과 연결을 고려한다
+
+
+Repository는 DAO보다 조금 더 도메인에 가까운 개념이다.
+
+DB와의 연결에 있어 고 레벨 수준의 연결이 사용된다.
+-> 도메인(객체 또는 컬렉션)수준에서 DB와의 연결을 고려한다.  
+
+
+
+조금, 이해하기 쉽게 정리하자면 DAO는 Mybatis, JDBC처럼 실제 데이터베이스의 테이블의 내용과 비교해서 데이터를 CRUD한다.
+그러나 Repository는 Entity(객체)를 중심으로, jpa와 같은 ORM 기술을 사용하여 실제 데이터베이스의 테이블의 내용과 비교하는 내용을 숨긴다.
+
+
+즉 과거보다 더 시스템이 복잡해지고, 규모가 커져가는 만큼. 다양한 DAO를 활용하여 효율적으로 DB에 접근해야할 필요성이 생겼고,
+
+이를 관리하기 위해 <어플리케이션 계층> 과 <데이터베이스 계층> 사이를 연결해주던 DAO의 방식을 추상화하여 관리하는 Repository라는 계층이 생긴것이 아닐까 추측한다.
+
+https://isaac56.github.io/etc/2021/08/29/difference_DAO_Repository/
+https://haon.blog/spring/dao-repository/
